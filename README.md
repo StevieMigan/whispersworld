@@ -9,3 +9,4 @@ http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/ee2ae7fa
 https://tse4.mm.bing.net/th?id=OIP.qXdN1uXFifcOVYKDH3SeuQHaGr&pid=Api - Moon Image
 https://lh3.googleusercontent.com/proxy/Zfp8xQ7Av9Ykzq0Ng3PVFne512SG_yr_VEkbyB5GWoxOXz_58fSqCtW35lfte6mEbxHdZz8vzGbwLYqmf4TSU5qNDEs=s0-d - Lightning Image
 https://forums.terraria.org/index.php?attachments/lesser_healing_potion-png.175737/ - Magic Potion Image
+http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/7414f939ab6fc5e.png - Cat Image
