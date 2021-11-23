@@ -2,8 +2,19 @@ body {
     background-color: black;
 }
 
-.welcome {
-    background-color: purple;
-    height: 300px;
-    width: auto;
+.welcome-banner {
+   display:block;
+   margin:0 auto;
+   width:200px;
+   padding-top: 100px;
+}
+
+.rules-header {
+    color: white;
+    text-align: center;
+}
+
+.rules-text {
+    color: white;
+    text-align: center;
 }
