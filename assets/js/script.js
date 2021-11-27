@@ -74,6 +74,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const grid = document.querySelector('.grid');
     const attemptsHolder = document.querySelector('.attemptsHolder');
     const foundHolder = document.querySelector('.foundHolder');
+    
+let attempts = 0;
+let foundCards = 0;
+attemptsHolder.textContent = attempts;
+foundHolder.textContent = foundCards
 
     let chosenCards = [];
     let chosenCardsIds = [];
