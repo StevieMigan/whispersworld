@@ -1,9 +1,7 @@
-console.log("testing!")
-
 document.addEventListener('DOMContentLoaded', () => {
 
 
-    const cardArray = [
+    const cardsList = [
 
         {
             name: 'clover',
@@ -69,19 +67,30 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'rose',
             img: 'assets/images/rose-card.png'
         }
-    ]
+    ];
 
-    cardArray.sort(() => 0.5 - Math.random())
+    cardsList.sort( () => 0.5 - Math.random() );
+    
+    const grid = document.querySelector('.grid');
+    const attemptsHolder = document.querySelector('.attemptsHolder');
+    const foundHolder = document.querySelector('.foundHolder');
 
-  
-
+    let chosenCards = [];
+    let chosenCardsIds = [];
+    
     function createBoard() {
-      for (let i = 0; i < cardArray.length; i++) {
-        const card = document.createElement('img')
-        card.setAttribute('src', 'assets/images/cat-card.png')
-        card.setAttribute('data-id', i)
+      for (let i = 0; i < cardsList.length; i++) {
+        let card = document.createElement('img');
+        card.setAttribute('src', 'assets/images/cat-card.png');
+        card.setAttribute('data-id',i);
         card.addEventListener('click', flipCard)
         grid.appendChild(card)
       }
     }
+
+function flipCard() {
+
+}
+
+    createBoard();
     })
