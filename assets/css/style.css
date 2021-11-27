@@ -3,10 +3,10 @@ body {
 }
 
 .welcome-banner {
-   display:block;
-   margin:0 auto;
-   width:200px;
-   padding-top: 50px;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    padding-top: 50px;
 }
 
 .rules-header {
@@ -20,11 +20,11 @@ body {
 }
 
 .grid {
-
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
-    grid-gap: 15px;
+    height: 400px;
+    width: 400px;
+    font-size: 0;
+    margin: 0 auto;
+        
 }
 
 .score-meter {
