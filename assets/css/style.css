@@ -20,14 +20,27 @@ body {
 }
 
 .grid {
+    display: flex;
+    flex-wrap: wrap;
     height: 400px;
     width: 400px;
     font-size: 0;
     margin: 0 auto;
+    border: 2px solid purple;
         
 }
 
-.score-meter {
+.attemptsHolder {
+    color: white;
+    text-align: center;
+}
+
+.foundHolder {
+    color: white;
+    text-align: center;
+}
+
+h2 {
     color: white;
     text-align: center;
 }
