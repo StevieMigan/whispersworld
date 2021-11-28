@@ -67,18 +67,26 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'rose',
             img: 'assets/images/rose-card.png'
         }
-    ];
+    ]
+
+    cardsList.sort(() => 0.5 - Math.random())
 
     const grid = document.querySelector('.grid')
+    const resultDisplay = document.querySelector('#result')
+    let cardsChosen = []
+    let cardsChosenId = []
+    let cardsWon = []
 
 
     function createBoard() {
         for (let i = 0; i < cardsList.length; i++) {
-            let card = document.createElement('img')
+            const card = document.createElement('img')
             card.setAttribute('src', 'assets/images/cat-card.png')
             card.setAttribute('data-id', i)
             card.addEventListener('click', flipCard)
             grid.appendChild(card)
         }
     }
+
+    createBoard()
 })
