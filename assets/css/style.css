@@ -2,11 +2,9 @@ body {
     background-color: black;
 }
 
-.welcome-banner {
-    display: block;
-    margin: 0 auto;
-    width: 200px;
-    padding-top: 50px;
+h1 {
+    color: white;
+    text-align: center;
 }
 
 .rules-header {
