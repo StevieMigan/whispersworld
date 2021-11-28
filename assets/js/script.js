@@ -69,33 +69,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ];
 
-    cardsList.sort( () => 0.5 - Math.random() );
-    
-    const grid = document.querySelector('.grid');
-    const attemptsHolder = document.querySelector('.attemptsHolder');
-    const foundHolder = document.querySelector('.foundHolder');
-    
-let attempts = 0;
-let foundCards = 0;
-attemptsHolder.textContent = attempts;
-foundHolder.textContent = foundCards
+    const grid = document.querySelector('.grid')
 
-    let chosenCards = [];
-    let chosenCardsIds = [];
-    
+
     function createBoard() {
-      for (let i = 0; i < cardsList.length; i++) {
-        let card = document.createElement('img');
-        card.setAttribute('src', 'assets/images/cat-card.png');
-        card.setAttribute('data-id',i);
-        card.addEventListener('click', flipCard)
-        grid.appendChild(card)
-      }
+        for (let i = 0; i < cardsList.length; i++) {
+            let card = document.createElement('img')
+            card.setAttribute('src', 'assets/images/cat-card.png')
+            card.setAttribute('data-id', i)
+            card.addEventListener('click', flipCard)
+            grid.appendChild(card)
+        }
     }
-
-function flipCard() {
-
-}
-
-    createBoard();
-    })
+})
