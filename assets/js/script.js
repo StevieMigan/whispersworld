@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
 
-    const cardsList = [
+    const cards = [
 
         {
             name: 'clover',
@@ -68,25 +68,32 @@ document.addEventListener('DOMContentLoaded', () => {
             img: 'assets/images/rose-card.png'
         }
     ]
+   
+    cards.sort(() => 0.5 - Math.random())
 
-    cardsList.sort(() => 0.5 - Math.random())
+const grid = document.querySelector('.grid')
+let cardsChosen = []
+let cardsChosenIds = []
 
-    const grid = document.querySelector('.grid')
-    const resultDisplay = document.querySelector('#result')
-    let cardsChosen = []
-    let cardsChosenId = []
-    let cardsWon = []
-
-
-    function createBoard() {
-        for (let i = 0; i < cardsList.length; i++) {
-            const card = document.createElement('img')
-            card.setAttribute('src', 'assets/images/cat-card.png')
-            card.setAttribute('data-id', i)
-            card.addEventListener('click', flipCard)
-            grid.appendChild(card)
-        }
+function createBoard(){
+    for (let i = 0; i < cards.length; i++) {
+        const card = document.createElement('img')
+        card.setAttribute('src', 'assets/images/cat-card.png')
+        card.setAttribute('data-id', i)
+        card.addEventListener('click', flipCard)
+        grid.appendChild(card)
     }
+}
 
-    createBoard()
+createBoard()
+
+function flipCard() {
+   let cardId = this.getAttribute('data-id')
+      cardsChosen.push(cards[cardId].name)
+      cardsChosenIds.push(cardId)
+      this.setAttribute('src', cards[cardId].img)
+}
+
+
+
 })
