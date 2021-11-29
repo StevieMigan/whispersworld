@@ -31,10 +31,6 @@ strong {
     color: purple
 }
 
-.welcome-banner {
-    text-align: center;
-}
-
 .whisper-speech {
     display: block;
     margin-left: auto;
@@ -43,10 +39,7 @@ strong {
 }
 
 .whisper-link {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    margin-left: 200px;
 }
 
 .rules {
@@ -67,7 +60,6 @@ strong {
 
 @media screen and (max-width: 500px) {
     .whisper-link {
-height:auto;
-width:auto;
+margin-left: 50px;
     }
 }
