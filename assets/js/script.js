@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
 
-    const cardArray = [
+    const cardDeck = [
 
         {
             name: 'clover',
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ]
 
-    cardArray.sort(() => 0.5 - Math.random())
+    cardDeck.sort(() => 0.5 - Math.random())
 
     const grid = document.querySelector('.grid')
     const resultDisplay = document.querySelector('#result')
@@ -77,19 +77,18 @@ document.addEventListener('DOMContentLoaded', () => {
     let cardsChosenId = []
     let cardsWon = []
   
-    //create your board
-    function createBoard() {
-      for (let i = 0; i < cardArray.length; i++) {
+    function createGame() {
+      for (let i = 0; i < cardDeck.length; i++) {
         const card = document.createElement('img')
         card.setAttribute('src', 'assets/images/cat-card.png')
         card.setAttribute('data-id', i)
-        card.addEventListener('click', flipCard)
+        card.addEventListener('click', cardFlip)
         grid.appendChild(card)
       }
     }
   
-    //check for matches
-    function checkForMatch() {
+    
+    function matchChecker() {
       const cards = document.querySelectorAll('img')
       const optionOneId = cardsChosenId[0]
       const optionTwoId = cardsChosenId[1]
@@ -97,38 +96,37 @@ document.addEventListener('DOMContentLoaded', () => {
       if(optionOneId == optionTwoId) {
         cards[optionOneId].setAttribute('src', 'assets/images/cat-card.png')
         cards[optionTwoId].setAttribute('src', 'assets/images/cat-card.png')
-        alert('You have clicked the same image!')
+        alert("The spell won't work if you use the same card!")
       }
       else if (cardsChosen[0] === cardsChosen[1]) {
-        alert('You found a match')
+        alert("Well done! You're almost there!")
         cards[optionOneId].setAttribute('src', 'assets/images/blank-card.png')
         cards[optionTwoId].setAttribute('src', 'assets/images/blank-card.png')
-        cards[optionOneId].removeEventListener('click', flipCard)
-        cards[optionTwoId].removeEventListener('click', flipCard)
+        cards[optionOneId].removeEventListener('click', cardFlip)
+        cards[optionTwoId].removeEventListener('click', cardFlip)
         cardsWon.push(cardsChosen)
       } else {
         cards[optionOneId].setAttribute('src', 'assets/images/cat-card.png')
         cards[optionTwoId].setAttribute('src', 'assets/images/cat-card.png')
-        alert('Sorry, try again')
+        alert("Sorry, that's not a match! Keep trying!")
       }
       cardsChosen = []
       cardsChosenId = []
       resultDisplay.textContent = cardsWon.length
-      if  (cardsWon.length === cardArray.length/2) {
-        resultDisplay.textContent = 'Congratulations! You found them all!'
+      if  (cardsWon.length === cardDeck.length/2) {
+        resultDisplay.textContent = "Fantastic work! The spell is ready to cast!"
       }
     }
   
-    //flip your card
-    function flipCard() {
+    function cardFlip() {
       let cardId = this.getAttribute('data-id')
-      cardsChosen.push(cardArray[cardId].name)
+      cardsChosen.push(cardDeck[cardId].name)
       cardsChosenId.push(cardId)
-      this.setAttribute('src', cardArray[cardId].img)
+      this.setAttribute('src', cardDeck[cardId].img)
       if (cardsChosen.length ===2) {
-        setTimeout(checkForMatch, 500)
+        setTimeout(matchChecker, 500)
       }
     }
   
-    createBoard()
+    createGame()
   })
