@@ -3,28 +3,55 @@ body {
 }
 
 h1 {
-    color: white;
+    color: purple;
+    font-family: 'Rock Salt', cursive, sans-serif;
     text-align: center;
 }
 
 h2 {
     color: white;
     text-align: center;
+    font-family: 'Rock Salt', cursive, sans-serif;
 }
 
 h3 {
     color: white;
     text-align: center;
+    font-family: 'Rock Salt', cursive, sans-serif;
 }
 
-.rules-header {
+p {
     color: white;
+    text-align: center;
+    font-family: 'Rock Salt', cursive, sans-serif;
+    font-size: x-large;
+}
+
+strong {
+    color: purple
+}
+
+.welcome-banner {
     text-align: center;
 }
 
-.rules-text {
+.whisper-speech {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.whisper-link {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.rules {
     color: white;
-    text-align: center;
+    text-align: left;
 }
 
 .grid {
@@ -35,16 +62,5 @@ h3 {
     font-size: 0;
     margin: 0 auto;
     border: 2px solid purple;
-        
-}
 
-.attemptsHolder {
-    color: white;
-    text-align: center;
 }
-
-.foundHolder {
-    color: white;
-    text-align: center;
-}
-
