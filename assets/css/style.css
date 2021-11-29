@@ -64,3 +64,10 @@ strong {
     border: 2px solid purple;
 
 }
+
+@media screen and (max-width: 500px) {
+    .whisper-link {
+height:auto;
+width:auto;
+    }
+}
