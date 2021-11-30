@@ -119,7 +119,9 @@ document.addEventListener('DOMContentLoaded', () => {
       cardsChosenId = []
       resultDisplay.textContent = cardsWon.length
       if  (cardsWon.length === cardDeck.length/2) {
-        resultDisplay.textContent = "Fantastic work! The spell is ready to cast!"
+        alert("Fantastic work! The spell is ready to cast! Let's play again!")
+        5000
+        history.go()
       }
     }
   
@@ -161,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
   window.onload = function () {
-      let time_minutes = 1; // Value in minutes
+      let time_minutes = 2; // Value in minutes
       let time_seconds = 0; // Value in seconds
   
       let duration = time_minutes * 60 + time_seconds;
