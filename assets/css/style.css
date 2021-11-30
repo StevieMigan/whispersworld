@@ -78,10 +78,3 @@ strong {
     }
 }
 
-@media screen and (max-width: 430px) {
-    .grid {
-        padding-right:  70px;
-        padding-left: 0;
-        border: 0;
-    }
-}

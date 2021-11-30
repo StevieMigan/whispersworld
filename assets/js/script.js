@@ -128,9 +128,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   
-    function playCatMeow(){
-      var meow = new Audio('assets/audio/cat-meow.wav');
-    meow.play();
-    }
+  
     createGame()
   })
