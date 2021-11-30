@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             name: 'clover',
             img: 'assets/images/clover-card.png'
+            
         },
         {
             name: 'dragon-egg',
@@ -71,11 +72,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     cardDeck.sort(() => 0.5 - Math.random())
 
+    
+
     const grid = document.querySelector('.grid')
     const resultDisplay = document.querySelector('#result')
     let cardsChosen = []
     let cardsChosenId = []
     let cardsWon = []
+    
   
     function createGame() {
       for (let i = 0; i < cardDeck.length; i++) {
@@ -86,6 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
         grid.appendChild(card)
       }
     }
+  
   
     
     function matchChecker() {
@@ -127,7 +132,47 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(matchChecker, 500)
       }
     }
+   
   
+    function paddedFormat(num) {
+      return num < 10 ? "0" + num : num; 
+  }
   
+  function startCountDown(duration, element) {
+  
+      let secondsRemaining = duration;
+      let min = 0;
+      let sec = 0;
+  
+      let countInterval = setInterval(function () {
+  
+          min = parseInt(secondsRemaining / 60);
+          sec = parseInt(secondsRemaining % 60);
+  
+          element.textContent = `${paddedFormat(min)}:${paddedFormat(sec)}`;
+  
+          secondsRemaining = secondsRemaining - 1;
+          if (secondsRemaining < 0) {
+            alert("Sorry, too slow this time! We'll have to start the spell again!")
+            clearInterval(countInterval)
+            history.go()
+             };
+      }, 1000);
+  }
+  
+  window.onload = function () {
+      let time_minutes = 1; // Value in minutes
+      let time_seconds = 0; // Value in seconds
+  
+      let duration = time_minutes * 60 + time_seconds;
+  
+      element = document.querySelector('#count-down-timer');
+      element.textContent = `${paddedFormat(time_minutes)}:${paddedFormat(time_seconds)}`;
+  
+      startCountDown(--duration, element);
+  };
+
+
+
     createGame()
   })
