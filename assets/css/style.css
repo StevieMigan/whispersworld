@@ -77,3 +77,9 @@ strong {
         margin-left: 50px;
     }
 }
+
+@media screen and (max-width: 430px) {
+    .grid {
+        margin-right: 20px;
+    }
+}
