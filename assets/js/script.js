@@ -90,8 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
         grid.appendChild(card)
       }
     }
-  
-  
+    
     
     function matchChecker() {
       const cards = document.querySelectorAll('img')
