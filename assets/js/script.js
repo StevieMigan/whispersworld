@@ -134,7 +134,13 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
    
-  
+    function playMeow() {
+      let audio = new Audio('assets/audio/cat-meow.wav');
+      audio.play();
+      }
+      console.log(playMeow())
+
+
     function paddedFormat(num) {
       return num < 10 ? "0" + num : num; 
   }
