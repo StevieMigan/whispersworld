@@ -12,6 +12,13 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
     </style>
+    <script type="text/javascript"> 
+    function playMeow() {
+    let audio = new Audio('assets/audio/cat-meow.mp3');
+    audio.play();
+    }
+    console.log(playMeow())
+    </script>
     
 </head>
 
@@ -25,7 +32,7 @@
     <img class="whisper-speech" alt="Meow! Click me to get started!" src="assets/images/whisper-speech.gif">
     <br>
     <a class= "whisper-link" href="game.html">
-            <img alt="Whisper the Weather Witch" src="assets/images/whisper-portrait.png" width="400" height="400">
+            <img onclick="playMeow()" alt="Whisper the Weather Witch" src="assets/images/whisper-portrait.png" width="400" height="400">
     </a>
     
     
