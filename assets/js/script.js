@@ -103,7 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
         alert("The spell won't work if you use the same card!")
       }
       else if (cardsChosen[0] === cardsChosen[1]) {
-        alert("Well done! You're almost there!")
         cards[optionOneId].setAttribute('src', 'assets/images/blank-card.png')
         cards[optionTwoId].setAttribute('src', 'assets/images/blank-card.png')
         cards[optionOneId].removeEventListener('click', cardFlip)
@@ -112,7 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         cards[optionOneId].setAttribute('src', 'assets/images/cat-card.png')
         cards[optionTwoId].setAttribute('src', 'assets/images/cat-card.png')
-        alert("Sorry, that's not a match! Keep trying!")
       }
       cardsChosen = []
       cardsChosenId = []
