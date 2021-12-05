@@ -44,8 +44,11 @@ A number of testing methods have been used throughout the creation of Thanet Gam
 The Lighthouse feature of Chrome Dev tools has been used to ensure a consistently high score in all 4 areas of testing:
 
 *Performance
+
 *Accessibility
+
 *Best Practices
+
 *SEO
 
 ![Lighthouse](https://github.com/StevieMigan/whispersworld/blob/main/assets/images/index-lighthouse.png?raw=true)
@@ -53,8 +56,11 @@ The Lighthouse feature of Chrome Dev tools has been used to ensure a consistentl
 Site colours and features have been chosen to compliment one another and text color has been chosen to contrast against backgrounds to maximise UX and accessibility. The Site has been tested on a range of Devices and on 3 different browsers to ensure a consistent performance.
 
 -Chrome
+
 -Firefox
+
 -Edge
+
 
 The relevant media queries have been implemented to ensure a smooth UX site-wide for all screen sizes. This has been tested using Chrome developer tools and finalised using - http://ami.responsivedesign.is/#
 
@@ -73,12 +79,19 @@ A number of bugs were found during the construction of the project.
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://github.com/StevieMigan/whispersworld/blob/main/assets/images/html-check.png?raw=true)
+  - No errors were returned when passing through the official HTML W3C Validator
+
+   ![W3C validator](https://github.com/StevieMigan/whispersworld/blob/main/assets/images/html-check.png?raw=true)
 
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator]((https://github.com/StevieMigan/whispersworld/blob/main/assets/images/css-check.png?raw=true))
+  - No errors were found when passing through the official CSS Jigsaw Validator 
+
+  ![(Jigsaw) validator](https://github.com/StevieMigan/whispersworld/blob/main/assets/images/css-check.png?raw=true)
   
-   - JavaScript - No errors were found when passing through [JS Hint]((https://github.com/StevieMigan/whispersworld/blob/main/assets/images/js-check.png?raw=true))
+- Javascript - No errors were found when passing through JS Hint
+
+![JS Hint](https://github.com/StevieMigan/whispersworld/blob/main/assets/images/js-check.png?raw=true)
+     
 
 ### Unfixed Bugs
 
