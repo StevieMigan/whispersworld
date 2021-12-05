@@ -82,13 +82,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function createGame() {
     for (let i = 0; i < cardDeck.length; i++) {
-      const card = document.createElement('img')
-      card.setAttribute('src', 'assets/images/cat-card.png')
-      card.setAttribute('data-id', i)
-      card.addEventListener('click', cardFlip)
-      grid.appendChild(card)
+    const card = document.createElement('img')
+    card.setAttribute('src', 'assets/images/cat-card.png')
+    card.setAttribute('data-id', i)
+    let cardName = `Picture card ${i+1}`;
+    card.setAttribute('alt', cardName);
+    card.addEventListener('click', cardFlip)
+    grid.appendChild(card)
     }
-  }
+    }
+    
 
 
   function matchChecker() {
