@@ -76,9 +76,10 @@ strong {
     text-align: center;
 }
 
-@media screen and (max-width: 500px) {
-    .whisper-link {
-        margin-left: 50px;
+@media screen and (max-width: 610px) {
+   .whisper-link {
+         height: 300px;
+         width: auto;
+         margin-left: 0;
     }
 }
-
