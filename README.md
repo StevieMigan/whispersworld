@@ -14,7 +14,7 @@ The project includes a variety of features:
 
 ![Landing Image](https://github.com/StevieMigan/whispersworld/blob/main/assets/images/whisper-link.png?raw=true)
 
-    The project features a simple landing page that explains the rules of the game to the user and allows them to click to start when they're ready to begin. Audio onclick features that play a cat meowing sound has been added to the start button as an extra interative touch.
+    The project features a simple landing page that explains the rules of the game to the user and allows them to click to start when they're ready to begin. Audio onclick features that play a cat meowing sound has been added to the start button as an extra interactive touch.
 
 ## The Game Page
 
@@ -26,11 +26,11 @@ On the game page itself, a timer has been implemented to create an element of ch
 
 ![Reset Button](https://github.com/StevieMigan/whispersworld/blob/main/assets/images/reset-button.png?raw=true)
 
-In addition to this, Looping audio has also been added to the game page, but the audio bar has been left in to allow the user to switch this off/on depending on their personal preference.
+In addition to this, looping audio has also been added to the game page, but the audio bar has been left in to allow the user to switch this off/on depending on their personal preference.
 
 ![Audio Bar](https://github.com/StevieMigan/whispersworld/blob/main/assets/images/audio-bar.png?raw=true)
 
-The functionality of the game shuffles the cards on the grid each time the game is restarted, cards will be removed from the grid when matched with their matching counterpart and an alert message is in place to congratulate the player upon winning the game. This then invokes a function to restart the game.
+The functionality of the game shuffles the cards on the grid each time the game is restarted, cards will be removed from the grid when paired with their matching counterpart and an alert message is in place to congratulate the player upon winning the game. This then invokes a function to restart the game.
 
 ### Features Left to Implement
 
@@ -53,7 +53,7 @@ The Lighthouse feature of Chrome Dev tools has been used to ensure a consistentl
 
 ![Lighthouse](https://github.com/StevieMigan/whispersworld/blob/main/assets/images/index-lighthouse.png?raw=true)
 
-Site colours and features have been chosen to compliment one another and text color has been chosen to contrast against backgrounds to maximise UX and accessibility. The Site has been tested on a range of Devices and on 3 different browsers to ensure a consistent performance.
+Site colours and features have been chosen to compliment one another and text color has been chosen to contrast against backgrounds to maximise UX and accessibility. The Site has been tested on a range of devices and on 3 different browsers to ensure a consistent performance.
 
 -Chrome
 
