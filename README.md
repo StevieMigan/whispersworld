@@ -73,12 +73,12 @@ A number of bugs were found during the construction of the project.
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://github.com/StevieMigan/whispersworld/blob/b0db87ac598f28d83cfe56f4064b510ac2d82a6f/assets/images/html-check.png)
+  - No errors were returned when passing through the official [W3C validator](https://github.com/StevieMigan/whispersworld/blob/main/assets/images/html-check.png?raw=true)
 
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://github.com/StevieMigan/whispersworld/blob/b0db87ac598f28d83cfe56f4064b510ac2d82a6f/assets/images/css-check.png)
+  - No errors were found when passing through the official [(Jigsaw) validator]((https://github.com/StevieMigan/whispersworld/blob/main/assets/images/css-check.png?raw=true))
   
-   - JavaScript - No errors were found when passing through [JS Hint](https://github.com/StevieMigan/whispersworld/blob/b0db87ac598f28d83cfe56f4064b510ac2d82a6f/assets/images/js-check.png)
+   - JavaScript - No errors were found when passing through [JS Hint]((https://github.com/StevieMigan/whispersworld/blob/main/assets/images/js-check.png?raw=true))
 
 ### Unfixed Bugs
 
