@@ -68,68 +68,68 @@ document.addEventListener('DOMContentLoaded', () => {
       name: 'rose',
       img: 'assets/images/rose-card.png'
     }
-  ]
+  ];
 
-  cardDeck.sort(() => 0.5 - Math.random())
+  cardDeck.sort(() => 0.5 - Math.random());
 
 
-  const grid = document.querySelector('.grid')
-  const resultDisplay = document.querySelector('#result')
-  let cardsChosen = []
-  let cardsChosenId = []
+  const grid = document.querySelector('.grid');
+  const resultDisplay = document.querySelector('#result');
+  let cardsChosen = [];
+  let cardsChosenId = [];
   let cardsWon = [];
 
 
   function createGame() {
     for (let i = 0; i < cardDeck.length; i++) {
-    const card = document.createElement('img')
-    card.setAttribute('src', 'assets/images/cat-card.png')
-    card.setAttribute('data-id', i)
+    const card = document.createElement('img');
+    card.setAttribute('src', 'assets/images/cat-card.png');
+    card.setAttribute('data-id', i);
     let cardName = `Picture card ${i+1}`;
     card.setAttribute('alt', cardName);
-    card.addEventListener('click', cardFlip)
-    grid.appendChild(card)
+    card.addEventListener('click', cardFlip);
+    grid.appendChild(card);
     }
     }
     
 
 
   function matchChecker() {
-    const cards = document.querySelectorAll('img')
-    const optionOneId = cardsChosenId[0]
-    const optionTwoId = cardsChosenId[1]
+    const cards = document.querySelectorAll('img');
+    const optionOneId = cardsChosenId[0];
+    const optionTwoId = cardsChosenId[1];
 
     if (optionOneId == optionTwoId) {
-      cards[optionOneId].setAttribute('src', 'assets/images/cat-card.png')
-      cards[optionTwoId].setAttribute('src', 'assets/images/cat-card.png')
-      alert("The spell won't work if you use the same card!")
+      cards[optionOneId].setAttribute('src', 'assets/images/cat-card.png');
+      cards[optionTwoId].setAttribute('src', 'assets/images/cat-card.png');
+      alert("The spell won't work if you use the same card!");
     } else if (cardsChosen[0] === cardsChosen[1]) {
-      cards[optionOneId].setAttribute('src', 'assets/images/blank-card.png')
-      cards[optionTwoId].setAttribute('src', 'assets/images/blank-card.png')
-      cards[optionOneId].removeEventListener('click', cardFlip)
-      cards[optionTwoId].removeEventListener('click', cardFlip)
-      cardsWon.push(cardsChosen)
+      cards[optionOneId].setAttribute('src', 'assets/images/blank-card.png');
+      cards[optionTwoId].setAttribute('src', 'assets/images/blank-card.png');
+      cards[optionOneId].removeEventListener('click', cardFlip);
+      cards[optionTwoId].removeEventListener('click', cardFlip);
+      cardsWon.push(cardsChosen);
     } else {
-      cards[optionOneId].setAttribute('src', 'assets/images/cat-card.png')
-      cards[optionTwoId].setAttribute('src', 'assets/images/cat-card.png')
+      cards[optionOneId].setAttribute('src', 'assets/images/cat-card.png');
+      cards[optionTwoId].setAttribute('src', 'assets/images/cat-card.png');
     }
-    cardsChosen = []
-    cardsChosenId = []
-    resultDisplay.textContent = cardsWon.length
+    cardsChosen = [];
+    cardsChosenId = [];
+    resultDisplay.textContent = cardsWon.length;
     if (cardsWon.length === cardDeck.length / 2) {
-      alert("Fantastic work! The spell is ready to cast! Let's play again!")
-      5000
-      history.go()
+      alert("Fantastic work! The spell is ready to cast! Let's play again!");
+      5000;
+      history.go();
     }
   }
 
   function cardFlip() {
-    let cardId = this.getAttribute('data-id')
-    cardsChosen.push(cardDeck[cardId].name)
-    cardsChosenId.push(cardId)
-    this.setAttribute('src', cardDeck[cardId].img)
+    let cardId = this.getAttribute('data-id');
+    cardsChosen.push(cardDeck[cardId].name);
+    cardsChosenId.push(cardId);
+    this.setAttribute('src', cardDeck[cardId].img);
     if (cardsChosen.length === 2) {
-      setTimeout(matchChecker, 500)
+      setTimeout(matchChecker, 500);
     }
   }
 
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let audio = new Audio('assets/audio/cat-meow.wav');
     audio.play();
   }
-  console.log(playMeow())
+  console.log(playMeow());
 
 
   function paddedFormat(num) {
@@ -159,10 +159,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
       secondsRemaining = secondsRemaining - 1;
       if (secondsRemaining < 0) {
-        alert("Sorry, too slow this time! We'll have to start the spell again!")
-        clearInterval(countInterval)
-        history.go()
-      };
+        alert("Sorry, too slow this time! We'll have to start the spell again!");
+        clearInterval(countInterval);
+        history.go();
+      }
     }, 1000);
   }
 
@@ -180,5 +180,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  createGame()
-})
+  createGame();
+});
