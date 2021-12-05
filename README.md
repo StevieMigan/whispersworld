@@ -40,7 +40,7 @@ The Lighthouse feature of Chrome Dev tools has been used to ensure a consistentl
 *Best Practices
 *SEO
 
-![Lighthouse](https://github.com/StevieMigan/thanet-gaming-club/blob/main/assets/images/lighthouse-score.png?raw=true)
+![Lighthouse](https://github.com/StevieMigan/whispersworld/blob/main/assets/images/index-lighthouse.png?raw=true)
 
 Site colours and features have been chosen to compliment one another and text color has been chosen to contrast against backgrounds to maximise UX and accessibility. The Site has been tested on a range of Devices and on 3 different browsers to ensure a consistent performance.
 
@@ -50,19 +50,17 @@ Site colours and features have been chosen to compliment one another and text co
 
 The relevant media queries have been implemented to ensure a smooth UX site-wide for all screen sizes. This has been tested using Chrome developer tools and finalised using - http://ami.responsivedesign.is/#
 
-A few minor alterations were made for these media queries - The Hero-image does not appear on mobile devices, focusing instead on relaying information and using the high-score image as a background to provide an eye catching landing page. The background colours for the individual sections have also been removed to just be black on smaller screens, again to minimise overwhelming the user with too many colors and features.
+Alt images have been added in the script.js file using the setAttribute method to ensure accessibility was kept at 100, site-wide.
 
 ## Bugs
 
-A number of bugs were found during the construction of the project, both in the HTML and CSS files.
+A number of bugs were found during the construction of the project.
 
-- Fixed bugs in file paths that were causing certain images not to load. I removed "/" before assets to fix this problem sitewide.
+- Fixed a bug in the script.js file that was causing an issue where-in the card array would not randomise correctly. 
 
-- Fixed potential issue in the footer social media links relating to security - as flagged by Lighthouse checks - Added rel="noreferrer" to fix this.
+- Fixed a bug with the audio files not loading correctly - this turned out to be an issue with file paths not being entered correctly.
 
-- Fixed a bug causing long load times on index.html and games.html by converting images from JPG and PNG format to webp, before compressing images to ensure the minimum file size.
-
-- Fixed a bug in CSS code that was causing console pictures to be sized incorrectly and stretch outside their individual borders. Rectified this by adding "object-fit: cover;" and correcting the Width and Height elements.
+- Fixed a bug in the script.js that was causing issues with the game grid loading correctly.
 
 ### Validator Testing 
 
