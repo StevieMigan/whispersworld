@@ -1,69 +1,28 @@
 # Whisper's World
 
-Whisper's World is a simple, pick-up and play card matching game that is aimed at Children aged 5-10 years old. The game is built primarily in Javascript with minimal HTML and CSS styling to keep the focus on the game itself. The project features a variety of features, including a landing page that explains the rules of the game to the user and allows them to click to start when they're ready to begin. Audio onclick features have been added to the start button as an extra touch.
+Whisper's World is a simple, pick-up and play card matching game that is aimed at Children aged 5-10 years old. The game is built primarily in Javascript with minimal HTML and CSS styling to keep the focus on the game itself. 
+
+![Responsive Mock-up](https://github.com/StevieMigan/whispersworld/blob/main/assets/images/game-responsive.png?raw=true)
+
+## Features 
+
+The project includes a variety of features: 
+
+- __The landing page image__
+
+![Landing Page]()
+
+    The project features a simplelanding page that explains the rules of the game to the user and allows them to click to start when they're ready to begin. Audio onclick features have been added to the start button as an extra interative touch.
+
+- __The game section__
+
+![Game Page]()
 
 On the game page itself, a timer has been implemented to create an element of challenge for the player. This has been set at 2 minutes intentionally after play-testing was completed by user's within the target demographic (Age 5-10) and this was felt to be most fair for all. There is also a score meter to inform the player how many matches they have made and a reset button underneath the game board to allow the user to restart the game at any point.
 
 In addition to this, Looping audio has also been added to the game page, but the audio bar has been left in to allow the user to switch this off/on depending on their personal preference.
 
 The functionality of the game shuffles the cards on the grid each time the game is restarted, cards will be removed from the grid when matched with their matching counterpart and an alert message is in place to congratulate the player upon winning the game. This then invokes a function to restart the game.
-
-
-
-![Responsive Mock-up](https://github.com/StevieMigan/thanet-gaming-club/blob/main/assets/images/responsive.png?raw=true)
-
-
-
-## Features 
-
-- __Navigation Bar__
-
-  The Navigation bar appears on all three pages and features links to the "Home", "games" and "join us" sections. The Navbar has been styled with a color changing hover feature to highlight to the user which section they will be navigating to next.
-
-  Featuring the Navigation bar on all three pages negates the need for the user to use the back button when navigating the site.
-
-![Nav Bar](https://github.com/StevieMigan/thanet-gaming-club/blob/main/assets/images/navbar.png?raw=true)
-
-- __The landing page image__
-
-  The Landing features a bright and colourful feature image that captures the attention of the user immediately, coupled with a short, snappy overview of the purpose of the website and the club that it serves to advertise.
-
-![Landing Page](https://github.com/StevieMigan/thanet-gaming-club/blob/main/assets/images/landing-image.png?raw=true)
-
-- __What do we play? section__
-
- -The "What do we play?" section provides further details to the user of the kinds of activities that take place at the club as well as the range of hardware available to play.
-
-  -The section is complimented by another eye-catching image, along with individual logos for the aforementioned games consoles that are available to play at the club.
-
-![What do we play?](https://github.com/StevieMigan/thanet-gaming-club/blob/main/assets/images/what-do-we-play.png?raw=true)
-
-- __When and where to find us? section__
-
-  - This section serves to inform the user of the weekly meetup day and times for the group, as well as featuring the full address in an easy to read format. 
-
-  - This section also includes a Google maps link that shows the user precisely where they can find the group.
-
-![When and where to find us?](https://github.com/StevieMigan/thanet-gaming-club/blob/main/assets/images/where-to-find-us.png?raw=true)
-
-- __The Footer__ 
-
-  - The footer section provides the user with alternative ways to link in with and follow the group on their various social media pages - these include: Facebook, Twitter and Instagram.
-
-![Footer](https://github.com/StevieMigan/thanet-gaming-club/blob/main/assets/images/footer.png?raw=true)
-
-- __Games__
-
-  - The games section provides an overview of some of the games available to play at the club. This serves to inform the user of what they can access whilst also offering some relatability as they should hopefully recognise one or two of the games.
-  -Games have been selected based on a mixture of current popularity along with some retro classics thrown in to appeal to older audiences. 
-
-![Games](https://github.com/StevieMigan/thanet-gaming-club/blob/main/assets/images/games-library.png?raw=true)
-
-- __Join Us section__
-
-  - This page allows a simple means of registering your interest in the club. It encourages users to leave their name and email address to allow a member of the team to send a follow-up email inviting them along to the club meet and/or to answer any further questions.
-
-![Join us](https://github.com/StevieMigan/thanet-gaming-club/blob/main/assets/images/join.png?raw=true)
 
 ### Features Left to Implement
 
